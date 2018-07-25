@@ -1,3 +1,4 @@
+depth = -y
 moveSpeed = keyboard_check(vk_lshift) ? 4 : 4;
 place_free( x, y)
 //Movement
