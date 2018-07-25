@@ -10,8 +10,8 @@ if ( global.time_currentSecond == global.time_maxSecond) {//if 60+, mod it back 
 	if ( global.time_currentMinute == global.time_maxMinute) {//if above max, mod
 		global.time_currentMinute %= global.time_maxMinute;
 		
-		current12Hour = global.time_currentHour mod (global.time_max12Hour + 1)//12HOUR CLOCK: HOURS
-		current12Hour ++;
+		global.time_current12Hour = global.time_currentHour mod (global.time_max12Hour + 1)//12HOUR CLOCK: HOURS
+		global.time_current12Hour ++;
 		
 		global.time_currentHour ++;//24HOUR CLOCK: HOURS  -  NOTE:the game will use the 24 hour clock to track events, the 12 hour clock is for player comfort only
 		if (global.time_currentHour == global.time_maxHour) {
