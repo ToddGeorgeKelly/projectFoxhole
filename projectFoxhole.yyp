@@ -115,6 +115,44 @@
             }
         },
         {
+            "Key": "2349f6b2-5f2c-40ba-8640-6c57c1549ae0",
+            "Value": {
+                "id": "a5a739d2-0283-4345-aeff-968be1942daf",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_initializeGame\/scr_initializeGame.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "27a09385-7423-4fd9-afde-0c073e499248",
+            "Value": {
+                "id": "e92dc149-d098-4c15-be08-7d95f3a26527",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_time_drawClock\/scr_time_drawClock.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2a946b30-e2c8-483b-8ef8-7f1884c61e34",
             "Value": {
                 "id": "e2064409-8266-48e0-a060-414a11289944",
@@ -302,6 +340,25 @@
                 ],
                 "resourcePath": "views\/5f77f414-fc7a-4aef-9401-e083768f16ab.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6a6558a3-3f0e-4a81-a447-b698bad9ecd2",
+            "Value": {
+                "id": "3c977056-e060-49cd-93f0-ff14344941f4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_time_tickAndUpdate\/scr_time_tickAndUpdate.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -666,25 +723,6 @@
             }
         },
         {
-            "Key": "cf9cca88-8ce2-42e1-bd09-b035ed832138",
-            "Value": {
-                "id": "0284a0fa-c42d-4a82-8803-edad56c57d20",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\/script1\/script1.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "d9128101-f058-4e3c-a427-b04ba7a25f51",
             "Value": {
                 "id": "b1884770-93e9-4197-8f85-bc63ba39c60a",
@@ -972,7 +1010,9 @@
     ],
     "script_order": [
         "3a7470be-0c37-407b-9f38-caac598be0e1",
-        "cf9cca88-8ce2-42e1-bd09-b035ed832138"
+        "2349f6b2-5f2c-40ba-8640-6c57c1549ae0",
+        "27a09385-7423-4fd9-afde-0c073e499248",
+        "6a6558a3-3f0e-4a81-a447-b698bad9ecd2"
     ],
     "tutorial": ""
 }
