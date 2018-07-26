@@ -1,5 +1,3 @@
-depth = -y
-
 moveSpeed = keyboard_check(vk_lshift) ? 4 : 4;
 
 //Movement
@@ -64,25 +62,21 @@ if ( keyboard_check(KEY_UP) ) {
 
 
 
-//SPRITE DETERMINATION
-switch (direction)	{
 
-	case 0:
-		sprite_index = keyboard_check(KEY_RIGHT)? walkRight : standRight;
-		break;
+
+
+
+
+
+
+
+
+
 	
-	case 90:
-		sprite_index = keyboard_check(KEY_UP) ? walkUp : standUp;
-		break;
 	
-	case 180:
-		sprite_index = keyboard_check(KEY_LEFT) ? walkLeft : standLeft;
-		break;
-		
-	case 270:
-		sprite_index = keyboard_check(KEY_DOWN) ? walkDown : standDown;
-		break;
+	
+	
+	
+	
+	
 
-}
-
-sprite_set_speed(sprite_index, moveSpeed+2, spritespeed_framespersecond)

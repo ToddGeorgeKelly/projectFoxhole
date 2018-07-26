@@ -1,8 +1,8 @@
 {
-    "id": "3a7470be-0c37-407b-9f38-caac598be0e1",
+    "id": "97dc024d-a1f3-4a5a-ba49-eaccab7f9f7e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_movement",
+    "name": "scr_mvmt_oldMovement",
     "IsCompatibility": false,
     "IsDnD": false
 }

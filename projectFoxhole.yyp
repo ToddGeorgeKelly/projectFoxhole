@@ -77,6 +77,25 @@
             }
         },
         {
+            "Key": "06d7c4b9-0f26-4c1d-9e93-427ef91dde3b",
+            "Value": {
+                "id": "5c220665-b659-4bfc-972d-c44d987bac9d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_mvmt_advMovement\/scr_mvmt_advMovement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "07821c2b-204e-446e-b858-072abfb42852",
             "Value": {
                 "id": "0c1ca9af-5149-4c55-bef4-25b419b3cc8d",
@@ -188,25 +207,6 @@
                 ],
                 "resourcePath": "sprites\/spr_timStandLeft\/spr_timStandLeft.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "3a7470be-0c37-407b-9f38-caac598be0e1",
-            "Value": {
-                "id": "6318f98e-3731-4ae6-a55c-5948237c58dd",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "scripts\/scr_movement\/scr_movement.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -362,6 +362,25 @@
             }
         },
         {
+            "Key": "64dd814d-42c1-4f10-927a-705554425240",
+            "Value": {
+                "id": "b9a859f3-9a47-468d-a664-ef659acf21a5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_mvmt_goAroundStuff\/scr_mvmt_goAroundStuff.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6a6558a3-3f0e-4a81-a447-b698bad9ecd2",
             "Value": {
                 "id": "3c977056-e060-49cd-93f0-ff14344941f4",
@@ -492,6 +511,25 @@
                 ],
                 "resourcePath": "sprites\/spr_timWalkDown\/spr_timWalkDown.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "97dc024d-a1f3-4a5a-ba49-eaccab7f9f7e",
+            "Value": {
+                "id": "929b4a51-4f4b-41fc-afa6-92f5d870ae04",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_mvmt_oldMovement\/scr_mvmt_oldMovement.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1190,7 +1228,9 @@
         "0e34111c-30fd-4efe-bf3d-1409c2287c87",
         "ff567016-1315-4532-b4fc-7262a02fb01c",
         "83f45706-426f-4cbd-ba89-fccc7e2aa187",
-        "3a7470be-0c37-407b-9f38-caac598be0e1"
+        "06d7c4b9-0f26-4c1d-9e93-427ef91dde3b",
+        "64dd814d-42c1-4f10-927a-705554425240",
+        "97dc024d-a1f3-4a5a-ba49-eaccab7f9f7e"
     ],
     "tutorial": ""
 }
