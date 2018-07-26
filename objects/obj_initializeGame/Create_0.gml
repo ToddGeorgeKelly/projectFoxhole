@@ -1,5 +1,4 @@
-window_set_size( 960, 540)
-
-game_set_speed(60, gamespeed_fps)
+scr_game_initializeSystems()
 
 room_goto_next()
+

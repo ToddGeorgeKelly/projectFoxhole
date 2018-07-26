@@ -23,3 +23,15 @@ walkDown = spr_timWalkDown
 
 //COLLISION
 collisionBuffer = moveSpeed + 2
+
+
+
+
+global.tml_tick = timeline_add()
+timeline_moment_add_script( global.tml_tick, global.time_currentFps, scr_time_tickAndUpdate )
+
+
+timeline_index = global.tml_tick
+timeline_position = 0
+timeline_running = true
+timeline_loop = true

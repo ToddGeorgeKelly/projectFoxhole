@@ -1,6 +1,5 @@
+//scr_time_drawClock()
 
-
-draw_text( 60, 60, "Direction is " + string(direction) );
-draw_text( 60, 75, "currentUpDown is " + string(currentUpDown) );
-draw_text( 60, 90, "currentLeftRight is " + string(currentLeftRight) );
-
+draw_set_color(c_black)
+scr_time_drawClock()
+//draw_text( 60, 105, string(global.time_currentSecond) );

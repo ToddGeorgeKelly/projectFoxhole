@@ -1,8 +1,8 @@
 {
-    "id": "2349f6b2-5f2c-40ba-8640-6c57c1549ae0",
+    "id": "c0f704b1-94e1-4e4b-bfd6-d907527a2c9b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_initializeGame",
+    "name": "scr_time_getDateString",
     "IsCompatibility": false,
     "IsDnD": false
 }
