@@ -1,3 +1,3 @@
-targetx = 783
-targety = 358
+targetx = 668
+targety = 327
 targetRoom = rm_village
