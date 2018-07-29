@@ -11,4 +11,6 @@ var yyy = 0
 var radAngle = arctan2( yyy, xxx )
 var angle = 360 mod radtodeg(radAngle)
 
-draw_text(20, 65, string(angle))
+var test = []
+
+draw_text(20, 65, string(array_length_1d(test)))

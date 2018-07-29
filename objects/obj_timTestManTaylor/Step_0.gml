@@ -1,4 +1,6 @@
-depth = -y
+/// @description Run movement engine
 
+if (wantsToMove) {
+	scr_mvmt_runEngine()
+}
 
-scr_mvmt_keyboardRequest()

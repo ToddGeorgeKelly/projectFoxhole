@@ -1,29 +1,50 @@
-/// @function scr_mvmt_moveByXYRate(objectToMove, xRate, yRate, priority)
+/// @function scr_mvmt_moveByXYRate( objectToMove, xRate, yRate, priority, faceDirection(optional) )
 /// @description function to use when you know the X and Y rates by which you want to move an object
 /// @argument {real} objectToMove The id or name of the object you want to move.
 /// @argument {real} xRate Movement rate along x axis.
 /// @argument {real} yRate Movement rate along y axis.
-/// @argument {integer} Priority lower is higher priority, 0-collision, 1-abilities, 2-player controls, 3-environment
+/// @argument {integer} priority lower is higher priority, 0-collision, 1-abilities, 2-player controls, 3-environment
+/// @argument {boolean} faceDirection(optional) Should this movment cause the player to face the direction the movement is sending them? Default is false.
+/// @argument {boolean} isCollisionImmune(optional)
 
-var objToMove = argument0;//The Object that will be moved.
 
-var xRate = argument1;//The xRate of movement
-var yRate = argument2;//The yRate of movement
+var objectToMove = argument[0];//The Object that will be moved.
+var xRate = argument[1];//The xRate of movement
+var yRate = argument[2];//The yRate of movement
+var requestPriority = argument[3];//the priority
 
-var requestPriority = argument3;//the priority
+if (argument_count < 5)  {//set the value of the 
+	var faceDirection = false
+} else {
+	var faceDirection = argument[4]
+}
 
-var radians = arctan2(yRate, xRate)//This will take the x and y rates to give an angle in radians
-var rawDegrees = radians * (180/pi) //taking that radian and turing it into an degree angle
-var correctedDegrees = rawDegrees * -1
-objToMove.direction = correctedDegrees
+if (argument_count < 6)  {
+	var isCollisionImmune = false
+} else {
+	var isCollisionImmune = argument[5]
+}
 
+
+var radians = arctan2(yRate, xRate)
+var angle = (radians * (180/pi)) * -1
 
 if (xRate < 0) xRate *= -1;//check to see if the x or y rate is negative
 if (yRate < 0) yRate *= -1;//I have to do this or the target x and y(the raw values below) will always be positive even when I need to go in a negative direction.
 
+var requestedX =  round( objectToMove.x + xRate * cos(radians) )//round those raw values and set the position of the object
+var requestedY =  round( objectToMove.y + yRate * sin(radians) )//We HAVE to round or diagonal movement will be trying to set you at like .043 of a pixel position, which isnt possible, so this makes it so diaganal movement is smooth.
 
-var rawX = objToMove.x + xRate * cos(radians)//get the non integer value of the x and y coordinates we want to be at.
-var rawY = objToMove.y + yRate * sin(radians)
-objToMove.x =  round(rawX)//round those raw values and set the position of the object
-objToMove.y =  round(rawY)//We HAVE to round or diagonal movement will be trying to set you at like .043 of a pixel position, which isnt possible, so this makes it so diaganal movement is smooth.
+var requestData = [ requestPriority, objectToMove, requestedX, requestedY, angle, faceDirection]
 
+
+//get the length of the current movement array, this number will be the x index to store this information in. We dont have to add one because an array that has 5 variables stored in it will have the first index as 0 and the last as 4.
+var newSpot = array_height_2d(objectToMove.movementQueue)
+
+for (i = 0; i < array_length_1d(requestData); i ++)	{
+	
+	objectToMove.movementQueue[ newSpot, i ] = requestData[i]
+	
+}
+//show_debug_message(string(objectToMove.movementQueue))
+objectToMove.wantsToMove = true

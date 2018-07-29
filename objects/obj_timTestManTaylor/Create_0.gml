@@ -1,5 +1,8 @@
 movementQueue = []
 
+facingDirection = direction
+wantsToMove = false
+
 
 //MOVEMENT
 #macro KEY_UP ord("W")
