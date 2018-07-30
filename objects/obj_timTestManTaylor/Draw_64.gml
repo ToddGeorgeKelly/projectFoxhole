@@ -13,4 +13,4 @@ var angle = 360 mod radtodeg(radAngle)
 
 var test = []
 
-draw_text(20, 65, string(array_length_1d(test)))
+draw_text(20, 65, string(x) + ", " + string(y))

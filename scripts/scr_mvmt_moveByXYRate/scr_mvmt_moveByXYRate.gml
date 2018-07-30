@@ -4,8 +4,9 @@
 /// @argument {real} xRate Movement rate along x axis.
 /// @argument {real} yRate Movement rate along y axis.
 /// @argument {integer} priority lower is higher priority, 0-collision, 1-abilities, 2-player controls, 3-environment
-/// @argument {boolean} faceDirection(optional) Should this movment cause the player to face the direction the movement is sending them? Default is false.
-/// @argument {boolean} isCollisionImmune(optional)
+/// @argument {boolean} faceDirection Should this movment cause the player to face the direction the movement is sending them? Default is false.
+/// @argument {boolean} isCollisionImmune Default is false
+/// @argument {integer} timesToRun Default is 1
 
 
 var objectToMove = argument[0];//The Object that will be moved.
@@ -25,6 +26,13 @@ if (argument_count < 6)  {
 	var isCollisionImmune = argument[5]
 }
 
+if (argument_count < 7)  {
+	var timesToRun = 1
+} else {
+	var timesToRun = argument[6]
+	show_debug_message( string(timesToRun))
+}
+
 
 var radians = arctan2(yRate, xRate)
 var angle = (radians * (180/pi)) * -1
@@ -35,7 +43,7 @@ if (yRate < 0) yRate *= -1;//I have to do this or the target x and y(the raw val
 var requestedX =  round( objectToMove.x + xRate * cos(radians) )//round those raw values and set the position of the object
 var requestedY =  round( objectToMove.y + yRate * sin(radians) )//We HAVE to round or diagonal movement will be trying to set you at like .043 of a pixel position, which isnt possible, so this makes it so diaganal movement is smooth.
 
-var requestData = [ requestPriority, objectToMove, requestedX, requestedY, angle, faceDirection]
+var requestData = [ requestPriority, objectToMove, requestedX, requestedY, angle, faceDirection, isCollisionImmune, timesToRun, xRate, yRate]
 
 
 //get the length of the current movement array, this number will be the x index to store this information in. We dont have to add one because an array that has 5 variables stored in it will have the first index as 0 and the last as 4.

@@ -1,7 +1,7 @@
-var xx = 0;
-var yy = 0;
+xx = 0;
+yy = 0;
 
-moveSpeed = keyboard_check(vk_lshift) ? 4 : 8;
+moveSpeed = keyboard_check(vk_lshift) ? defaultSprintSpeed : defaultMoveSpeed;
 
 //Movement
 currentLeftRight = keyboard_key == KEY_LEFT || keyboard_key == KEY_RIGHT ? keyboard_key : undefined;//check which key(RIGHT or LEFT) was most recently pressed. 
@@ -39,7 +39,7 @@ if ( keyboard_check(KEY_DOWN) ) {
 
 //show_debug_message( string(direction) )
 //SPRITE DETERMINATION
-switch (direction)	{
+switch (facingDirection)	{
 
 	case 0://Right
 		sprite_index = keyboard_check(KEY_RIGHT)? walkRight : standRight;
@@ -77,5 +77,5 @@ switch (direction)	{
 
 sprite_set_speed(sprite_index, moveSpeed+2, spritespeed_framespersecond)
 if (xx != 0 || yy != 0) {
-	scr_mvmt_moveByXYRate(obj_timTestManTaylor, xx, yy, 3, true)
+	scr_mvmt_moveByXYRate(id, xx, yy, 3, true)
 }

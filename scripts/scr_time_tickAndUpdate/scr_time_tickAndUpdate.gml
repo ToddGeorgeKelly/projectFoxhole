@@ -1,4 +1,4 @@
-show_debug_message( "Clock Ticking...")
+//show_debug_message( "Clock Ticking...")
 //TICK, RUN EVERY second
 
 //Increment time system
