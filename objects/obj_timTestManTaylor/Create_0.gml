@@ -2,14 +2,14 @@
 depth = -y
 //Movement Request Variables
 movementQueue = []
-facingDirection = direction
 wantsToMove = false
 loopingRequest = undefined
 defaultMoveSpeed = 8
-defaultSprintSpeed = 10
+defaultSprintSpeed = 12
 collisionBuffer = defaultMoveSpeed + 2
 
 //Sprite declarations
+facingDirection = direction
 standRight = spr_timStandRIght
 standUp = spr_timStandUp
 standLeft = spr_timStandLeft

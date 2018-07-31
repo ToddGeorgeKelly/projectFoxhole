@@ -25,8 +25,10 @@ if (highestPriorityRequest[0, 5]) facingDirection = direction;
 
 
 //<<	COLLISION ENGINE	>>
-collisionBuffer =3
+collisionBuffer =2
 if (!highestPriorityRequest[ 0, 6 ]) {
+	
+	//--This collision code isnt really what I want long term. It 
 	
 	var currentX = x	//--store the initial xy location of the object thats moving
 	var currentY = y
@@ -38,48 +40,48 @@ if (!highestPriorityRequest[ 0, 6 ]) {
 
 	for (i = 0; i < distance ; i ++) {		//for until the index is equal to the distance we are going, check for a collision 
 	
-		checkingX = round(currentX + xCollisionBuffer * cos(degtorad(highestPriorityRequest[0, 4])) )
+		checkingX = round(currentX + xCollisionBuffer * cos(degtorad(highestPriorityRequest[0, 4])) )	//--define the XY of where we will be checking for a collision
 		checkingY = round(currentY + yCollisionBuffer * sin(degtorad(highestPriorityRequest[0, 4])) )
 
-		if ( !place_free( checkingX , checkingY ) ) {
-			var coneReach = 9
-			var shift = 0
-			//A -| -| - |- |- |- |- XX- |- |-| -| B
-			var leftRadians = (direction + 90) * pi/180
-			var leftConeX = checkingX + coneReach * cos(leftRadians)
-			var leftConeY = checkingY + coneReach * sin(leftRadians)
-			
-			var rightRadians = (direction - 90) * pi/180
-			var rightConeX = checkingX + coneReach * cos(rightRadians)
-			var rightConeY = checkingY + coneReach * sin(rightRadians)
+		if ( !place_free( checkingX , checkingY ) ) {	//--check to see if the 'checking' xy is occupied by an object that is 'solid'
 			/*
-							X
-							|
-			A----------------X B
-							|
-							X
-			
+										L  <-----The Left cone XY spot where we are checking for additional collisions.
+										|
+										|  <------the length of this line is what 'coneReach' controls
+	 S:Starting Point					|
+			S---------------------------C  <---C: point of collision
+										|
+										|
+										|
+										R  <----The Right cone XY spot.
 			
 			*/
-			if (!place_free(leftConeX, leftConeY)) {
-				currentX = currentX + shift * cos(leftRadians)
-				currentY = currentY + shift * sin(leftRadians)
+			var coneReach = 48	//--see the diagram above
+			var shift = 2	//--The rate at which we will move to the right or left if we are colliding with something and the right or left are open
+			//A -| -| - |- |- |- |- XX- |- |-| -| B
+			var leftRadians = (direction + 90) * pi/180		//--The perpedicular angle to the left of the collision point, followed by the XY position based on that angle and the coneReach
+			var leftConeX = round(checkingX + coneReach * cos(leftRadians))
+			var leftConeY = round(checkingY + coneReach * sin(leftRadians))
+			
+			var rightRadians = (direction - 90) * pi/180	//--The perpedicular angle to the right of the collision point, followed by the XY position based on that angle and the coneReach
+			var rightConeX = round(checkingX + coneReach * cos(rightRadians))
+			var rightConeY = round(checkingY + coneReach * sin(rightRadians))
+	
+			if (place_free(leftConeX, leftConeY)) {		//--if the left point is free, go that direction
+				currentX = round(currentX + shift * cos(leftRadians))
+				currentY = round(currentY + shift * sin(leftRadians))
 			}
-			if (!place_free(rightConeX, rightConeY)) {
-				currentX = currentX + shift * cos(rightRadians)
-				currentY = currentY + shift * sin(rightRadians)
+			if (place_free(rightConeX, rightConeY)) {	//--if the right point is free, go that direction
+				currentX = round(currentX + shift * cos(rightRadians))
+				currentY = round(currentY + shift * sin(rightRadians))
 			}
-			highestPriorityRequest[0, 2] = currentX
+			highestPriorityRequest[0, 2] = currentX		//--Once all needed changes to the position have been made, store the modified position back into the movement request array.
 			highestPriorityRequest[0, 3] = currentY
 			break;	
 		} 
-		currentX = checkingX
+		currentX = checkingX	//--if we didnt collide with anything, take another step!
 		currentY = checkingY
-	}
-	
-	//based on the collision, this is the next location we should be at
-	
-	
+	}	
 }
 
 

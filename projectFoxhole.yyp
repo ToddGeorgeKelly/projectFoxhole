@@ -457,6 +457,25 @@
             }
         },
         {
+            "Key": "4cecadcd-2cd8-47bb-950a-b011d60e6b79",
+            "Value": {
+                "id": "846abc3c-041d-4d1c-9dc1-cbc4d3195f3e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scr_mvmt_spriteDetermination\/scr_mvmt_spriteDetermination.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "522dcef6-7146-445d-9663-31413235c142",
             "Value": {
                 "id": "e993fb22-16b6-4362-94a5-3954c0be6b13",
@@ -1657,6 +1676,7 @@
         "60ba1503-4d98-4836-bb34-3d9a8c1c6d94",
         "089a450f-2d69-4bbc-9492-4a39112fb32a",
         "2d17d46a-e800-4a37-9164-763289931726",
+        "4cecadcd-2cd8-47bb-950a-b011d60e6b79",
         "b6836521-cce3-4f3e-a9b7-86789dc2c9a4"
     ],
     "tutorial": ""

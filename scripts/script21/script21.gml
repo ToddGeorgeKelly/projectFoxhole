@@ -17,10 +17,10 @@ if (!highestPriorityRequest[ 0, 6 ]) {
 
 		if ( !place_free( checkingX , checkingY ) ) {
 			var coneReach = 9
-			var shift = 0
+			var shift = 2
 			var leftRadians = (direction + 90) * pi/180
 			var rightRadians = (direction - 90) * pi/180
-			
+	
 			var leftConeX = checkingX + coneReach * cos(leftRadians)
 			var leftConeY = checkingY + coneReach * sin(leftRadians)
 			
