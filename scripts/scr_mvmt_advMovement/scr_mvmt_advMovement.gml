@@ -7,7 +7,7 @@ currentLeftRight = keyboard_key == KEY_LEFT || keyboard_key == KEY_RIGHT ? keybo
 //RIGHT/LEFT MOVEMENT
 if ( keyboard_check(KEY_LEFT) && keyboard_check(KEY_RIGHT) && currentLeftRight == KEY_RIGHT ) {
 	direction = 0
-	if ( place_free( x + collisionBuffer, y ) ) {
+	if ( place_free( x + collisionBuffer, y ) ) { //get the place you are at now pluse the buffer is 
 		x += moveSpeed
 	} else {
 		y += scr_mvmt_goAroundStuff(direction, x, y, collisionBuffer)

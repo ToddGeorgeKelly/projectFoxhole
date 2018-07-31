@@ -45,15 +45,5 @@ switch (dir) {
 	
 }
 
-if ( freeNeg && freePos ) {
-	var toss = random(1)
-	move = toss == 0 ? -shift: shift;
-	
-} else if ( freeNeg && !freePos ) {
-	move = -shift
-} else if ( !freeNeg && freePos ) {
-	move = shift
-} else if ( !freeNeg && !freePos ) {
-	move = 0
-}
+
 return move

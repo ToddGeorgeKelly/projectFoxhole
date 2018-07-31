@@ -76,6 +76,7 @@ switch (facingDirection)	{
 }
 
 sprite_set_speed(sprite_index, moveSpeed+2, spritespeed_framespersecond)
+
 if (xx != 0 || yy != 0) {
 	scr_mvmt_moveByXYRate(id, xx, yy, 3, true)
 }
