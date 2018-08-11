@@ -4,11 +4,9 @@
     "mvc": "1.1",
     "name": "ed7c94b2-371d-485a-b52b-27afe7b666ac",
     "children": [
-        "43a9df60-e1aa-4239-b13e-8b779a2cc262",
-        "d4aabea3-3d63-46b7-9612-01e99e8b94a6",
-        "d770282d-b4ef-4aad-9afa-141765c761c0",
-        "2d17d46a-e800-4a37-9164-763289931726",
-        "4cecadcd-2cd8-47bb-950a-b011d60e6b79"
+        "ca841f28-c773-4954-a264-641b80a93153",
+        "df23c0c4-5a56-4c53-90db-7ea964514b0c",
+        "d770282d-b4ef-4aad-9afa-141765c761c0"
     ],
     "filterType": "GMScript",
     "folderName": "Movement Engine",

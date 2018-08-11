@@ -1,4 +1,6 @@
 /// @description Insert description here
+//var collisionLayerId = layer_get_id(layer_collision)
+layer_set_visible("layer_collision", false)
 depth = -y
 //Movement Request Variables
 movementQueue = []
