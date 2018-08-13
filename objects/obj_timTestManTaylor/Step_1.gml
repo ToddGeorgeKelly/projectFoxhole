@@ -1,4 +1,5 @@
 /// @description Insert description here
+/*
 if ( loopingRequest != undefined ) {
 	var queueLength = array_height_2d(movementQueue)
 	for ( i = 0; i < array_length_2d(loopingRequest, 0); i ++ ) {

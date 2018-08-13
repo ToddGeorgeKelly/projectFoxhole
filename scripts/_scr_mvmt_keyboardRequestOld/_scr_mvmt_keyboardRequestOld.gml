@@ -1,4 +1,4 @@
-xx = 0;
+/*xx = 0;
 yy = 0;
 
 if (keyboard_check(vk_lcontrol)) {

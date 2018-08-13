@@ -1,3 +1,4 @@
+/*
 view_enabled = true
 view_camera[0] = camera_create_view( 0, 0,480, 240, 0, obj_timTestManTaylor, -1, -1, 300, 300 )
 view_visible[0] = true

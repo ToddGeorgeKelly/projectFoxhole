@@ -1,4 +1,4 @@
-//SPRITE DETERMINATION
+/*/SPRITE DETERMINATION
 if (keyboard_check(vk_control)) {
 	sprite_index = sneakWalk
 } else {	

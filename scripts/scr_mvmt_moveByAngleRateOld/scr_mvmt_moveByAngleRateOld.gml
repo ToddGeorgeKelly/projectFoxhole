@@ -7,7 +7,7 @@
 /// @argument {boolean} faceDirection(defaultFalse) Should this movment cause the player to face the direction the movement is sending them? Default is false.
 /// @argument {boolean} isCollisionImmune(defaultFalse)
 /// @argument {integer} timesToRun(default1)
-
+/*
 
 var objectToMove = argument[0];
 var angle = argument[1];

@@ -7,7 +7,7 @@
 /// @argument {boolean} faceDirection Should this movment cause the player to face the direction the movement is sending them? Default is false.
 /// @argument {boolean} isCollisionImmune Default is false
 /// @argument {integer} timesToRun Default is 1
-
+/*
 
 var objectToMove = argument[0];//The Object that will be moved.
 var xRate = argument[1];//The xRate of movement

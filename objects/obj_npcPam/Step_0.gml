@@ -1,4 +1,4 @@
-var timesToRun = irandom_range(10, 30)
+/*var timesToRun = irandom_range(10, 30)
 var xrate = irandom_range(-8,8)
 var yrate = irandom_range(-8,8)
 

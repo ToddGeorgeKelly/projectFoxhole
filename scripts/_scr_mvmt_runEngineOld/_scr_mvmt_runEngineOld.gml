@@ -1,4 +1,4 @@
-var numberOfRequests = array_height_2d(movementQueue) //get the number of movement request that have been submitted this step(movement requests are submitted in the pre-step event)
+/*var numberOfRequests = array_height_2d(movementQueue) //get the number of movement request that have been submitted this step(movement requests are submitted in the pre-step event)
 var highestPriorityRequest = [] //declare the variable that we will story the highest priority request in.
 highestPriorityRequest[0] = 9999 //set the priority super low(lower numbers are higher priority
 var numberOfArguments = undefined; //declare the variable we will be story the number of arguments contained in each request(even though it will always be the same based on how things are now, that might change in the future so i made this versatile)
@@ -56,6 +56,7 @@ if (!highestPriorityRequest[ 0, 6 ]) {
 										R  <----The Right cone XY spot.
 			
 			*/
+			/*
 			var coneReach = 48	//--see the diagram above
 			var shift = 2	//--The rate at which we will move to the right or left if we are colliding with something and the right or left are open
 			//A -| -| - |- |- |- |- XX- |- |-| -| B

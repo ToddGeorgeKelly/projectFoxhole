@@ -1,4 +1,4 @@
-loopingRequest = undefined;
+/*loopingRequest = undefined;
 wantsToMove = false;
 movementQueue = []
 defaultMoveSpeed = 8

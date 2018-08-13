@@ -1,14 +1,6 @@
 /// @description Insert description here
-//var collisionLayerId = layer_get_id(layer_collision)
-layer_set_visible("layer_collision", false)
-depth = -y
-//Movement Request Variables
-movementQueue = []
-wantsToMove = false
-loopingRequest = undefined
-defaultMoveSpeed = 8
-defaultSprintSpeed = 12
-collisionBuffer = defaultMoveSpeed + 2
+/*/var collisionLayerId = layer_get_id(layer_collision)
+
 
 //Sprite declarations
 facingDirection = direction

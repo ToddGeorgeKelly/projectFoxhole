@@ -1,4 +1,4 @@
-var dir = argument0
+/*var dir = argument0
 var xx = argument1
 var yy = argument2
 var collisionB = argument3

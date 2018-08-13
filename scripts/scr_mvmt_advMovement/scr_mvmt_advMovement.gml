@@ -1,4 +1,4 @@
-moveSpeed = keyboard_check(vk_lshift) ? 4 : 4;
+/*moveSpeed = keyboard_check(vk_lshift) ? 4 : 4;
 
 //Movement
 currentLeftRight = keyboard_key == KEY_LEFT || keyboard_key == KEY_RIGHT ? keyboard_key : undefined;//check which key(RIGHT or LEFT) was most recently pressed. 

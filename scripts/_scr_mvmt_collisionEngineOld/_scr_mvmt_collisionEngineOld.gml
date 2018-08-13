@@ -1,4 +1,4 @@
-var currentX = x	//--store the initial xy location of the object thats moving
+/*var currentX = x	//--store the initial xy location of the object thats moving
 var currentY = y
 var checkingX = undefined;	//--declare the variables where we will store the xy of the position we are checking for a collision
 var checkingY = undefined;
