@@ -1,8 +1,12 @@
 {
-    "id": "217a8166-b54d-43d4-907e-42e84d2c5bc6",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_mvmt_movementRequestAngle",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Movement Engine",
+    "path": "folders/Scripts/Movement Engine.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_mvmt_movementRequestAngle",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "7201185c-9d2f-4bad-a5ac-90db4224459a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "system_mvmt_movementEngine",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Inner Workings-Do Not Call",
+    "path": "folders/Scripts/Movement Engine/Inner Workings-Do Not Call.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "system_mvmt_movementEngine",
+  "tags": [],
+  "resourceType": "GMScript",
 }

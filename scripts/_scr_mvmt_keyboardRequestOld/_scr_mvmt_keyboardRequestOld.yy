@@ -1,8 +1,12 @@
 {
-    "id": "39f075a6-beb5-4d38-a890-e7612642d11a",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "_scr_mvmt_keyboardRequestOld",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Old Shiz",
+    "path": "folders/Scripts/Old Shiz.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "_scr_mvmt_keyboardRequestOld",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "d4aabea3-3d63-46b7-9612-01e99e8b94a6",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "scr_mvmt_moveByAngleRateOld",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Old Shiz",
+    "path": "folders/Scripts/Old Shiz.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "scr_mvmt_moveByAngleRateOld",
+  "tags": [],
+  "resourceType": "GMScript",
 }
